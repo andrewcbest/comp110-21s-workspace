@@ -18,15 +18,15 @@ print("Your fortune cookie says...")
 cookie: int = randint(1,4)
 
 if cookie == 1:
-    print("duke will lose today")
+    print("duke will lose today!")
 else:
     if cookie == 2:
-        print("the force is strong with you")
+        print("the force is strong with you.")
     else:
         if cookie == 3:
-            print("tommorow will be the best day of your life")
+            print("tommorow will be the best day of your life!")
         else:
-            print("I better not read you this one")
+            print("I better not read you this one.")
 
 print("Now, go spread positive vibes!")
 
