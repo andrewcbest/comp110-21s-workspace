@@ -29,8 +29,3 @@ else:
             print("I better not read you this one.")
 
 print("Now, go spread positive vibes!")
- 
-
-
-
-
