@@ -42,4 +42,4 @@ target_percent_output = str(int(target_percent))
 days_left_output = str(int(round(float(days_left))))
 
 print("We will reach " + target_percent_output + "% vaccination in " + days_left_output + " days, ")
-print("which falls on " + date_complete.strftime("%B %d, %Y"))
+print("which falls on " + date_complete.strftime("%B %d, %Y") + ".")
