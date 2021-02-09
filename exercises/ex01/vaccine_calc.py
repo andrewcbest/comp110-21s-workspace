@@ -35,7 +35,7 @@ target_doses: float = target_population * 2
 doses_left: float = target_doses - doses_admined
 days_left: float = (doses_left / doses_per_day)
 today: datetime = datetime.today()
-days_left_time: timedelta = timedelta(days_left)
+days_left_time: timedelta = timedelta(round(days_left))
 date_complete: datetime = today + days_left_time
 
 target_percent_output = str(int(target_percent))
