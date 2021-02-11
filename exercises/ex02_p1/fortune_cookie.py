@@ -17,7 +17,6 @@ def main() -> None:
 
 def fortune_cookie() -> str:
     """Will give the user one of four fortunes."""
-    
     cookie: int = randint(1, 4)
     if cookie == 1:
         return("duke will lose today!")
@@ -34,4 +33,6 @@ def fortune_cookie() -> str:
 # The special dunder variable __name__ will be "__main__" when run as module. 
 if __name__ == "__main__":
     main()
+    
+ 
     

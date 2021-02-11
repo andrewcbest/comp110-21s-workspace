@@ -9,6 +9,7 @@ def main() -> None:
     # TODO 2: Print the response of calling the tar_heels function here.
     print(tar_heels(choice))
 
+
 # TODO 1: Define the tar_heels function, and its logic, here.
 def tar_heels(response: int) -> str:
     """Divisible by 2, 7, or both?"""
@@ -25,3 +26,4 @@ def tar_heels(response: int) -> str:
 
 if __name__ == "__main__":
     main()
+
