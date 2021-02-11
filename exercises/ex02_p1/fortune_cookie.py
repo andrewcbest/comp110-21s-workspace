@@ -34,3 +34,4 @@ def fortune_cookie() -> str:
 # The special dunder variable __name__ will be "__main__" when run as module. 
 if __name__ == "__main__":
     main()
+    
