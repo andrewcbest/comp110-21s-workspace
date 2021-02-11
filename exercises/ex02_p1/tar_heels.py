@@ -24,5 +24,6 @@ def tar_heels(response: int) -> str:
             else:
                 return("CAROLINA")
 
+
 if __name__ == "__main__":
     main()
