@@ -17,7 +17,7 @@ def tar_heels(response: int) -> str:
         return("TAR HEELS")
     else:
         if response % 7 == 0: 
-             return("HEELS")
+            return("HEELS")
         else:
             if response % 2 == 0:
                 return("TAR")
@@ -26,4 +26,3 @@ def tar_heels(response: int) -> str:
 
 if __name__ == "__main__":
     main()
-

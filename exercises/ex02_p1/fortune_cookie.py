@@ -29,10 +29,8 @@ def fortune_cookie() -> str:
             else:
                 return("I better not read you this one.")
 
+
 # Python Idiom for "starting" the program when run as a module.
 # The special dunder variable __name__ will be "__main__" when run as module. 
 if __name__ == "__main__":
     main()
-    
- 
-    
