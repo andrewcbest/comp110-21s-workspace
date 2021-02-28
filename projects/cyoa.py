@@ -1,8 +1,13 @@
-""""Choose your own adventure project."""
+""""Choose your own adventure project. For the above and beyond, there is a game loop."""
+"""After each game, the user gets the opportunity to play one of the games again or quit."""
+"""Also, there are four options, more than the three required: easy, medium, hard, and end."""
+
 
 from random import randint
 
 __author__ = "730390102"
+
+SMILEY_DEVIL = "\U0001F608"
 
 points: int = 0
 
@@ -25,7 +30,7 @@ def main() -> None:
                     points = hard(points)
                     play_again = input(f"Score: {points}. Would you like to play again? (yes/no)")
                 else:
-                    end()
+                    play_again = "no"
     end()
 
 
@@ -33,7 +38,7 @@ def greet() -> None:
     """Greets the player."""
     global name
     name = str(input("What is your name? "))
-    print(f"Hello {name}! This is a number guessing game. Good lucK!")
+    print(f"Hello, {name}! This is a number guessing game. Good lucK!{SMILEY_DEVIL}")
 
 
 def easy() -> None:
