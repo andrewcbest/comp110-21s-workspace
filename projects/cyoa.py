@@ -1,9 +1,10 @@
+"""Choose your own adventure project."""
+
 from random import randint
 
-"""Choose your own adventure project. For the above and beyond, there is a game loop."""
+"""For the above and beyond, there is a game loop.""" 
 """After each game, the user gets the opportunity to play one of the games again or quit."""
 """Also, there are four options, more than the three required: easy, medium, hard, and end."""
-
 
 __author__ = "730390102"
 
