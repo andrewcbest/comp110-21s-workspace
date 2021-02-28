@@ -1,15 +1,17 @@
-""""Choose your own adventure project. For the above and beyond, there is a game loop."""
+from random import randint
+
+"""Choose your own adventure project. For the above and beyond, there is a game loop."""
 """After each game, the user gets the opportunity to play one of the games again or quit."""
 """Also, there are four options, more than the three required: easy, medium, hard, and end."""
 
-
-from random import randint
 
 __author__ = "730390102"
 
 SMILEY_DEVIL = "\U0001F608"
 
 points: int = 0
+player: str = "player"
+
 
 def main() -> None:
     """The entrypoint of the program."""
@@ -36,17 +38,17 @@ def main() -> None:
 
 def greet() -> None:
     """Greets the player."""
-    global name
-    name = str(input("What is your name? "))
-    print(f"Hello, {name}! This is a number guessing game. Good lucK!{SMILEY_DEVIL}")
+    global player
+    player = str(input("What is your name? "))
+    print(f"Hello, {player}! This is a number guessing game. Good lucK!{SMILEY_DEVIL}")
 
 
 def easy() -> None:
-    """Number guessing game where the user guesses between 1 and 2"""
+    """Number guessing game where the user guesses between 1 and 2."""
     print("In this game, you will guess if a number is 1 or 2! 50/50 shot! Good luck. ")
     i: int = 1
     while(i < 11):
-        num: str = str(randint(1,2))
+        num: str = str(randint(1, 2))
         guess: str = (input(f"Round {i}! Please enter guess: "))
         if guess == num: 
             global points
@@ -65,7 +67,7 @@ def medium(points: int) -> int:
     print("In this game, the number to be guessed is between 1 and 5. Good luck!")
     i: int = 1
     while(i < 11):
-        num: str = str(randint(1,5))
+        num: str = str(randint(1, 5))
         guess: str = (input(f"Round {i}! Please enter guess: "))
         if guess == num: 
             points += 5
@@ -83,7 +85,7 @@ def hard(points: int) -> int:
     print("In this game, the number to be guessed is between 1 and 10. Good luck!")
     i: int = 1
     while(i < 11):
-        num: str = str(randint(1,10))
+        num: str = str(randint(1, 10))
         guess: str = (input(f"Round {i}! Please enter guess: "))
         if guess == num: 
             points
@@ -99,7 +101,7 @@ def hard(points: int) -> int:
 
 def end() -> None:
     """Ends the game."""
-    print(f"Thanks for playing, {name}! Score: {points}")
+    print(f"Thanks for playing, {player}! Score: {points}")
 
 
 if __name__ == "__main__":
