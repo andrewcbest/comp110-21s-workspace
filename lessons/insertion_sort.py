@@ -20,5 +20,5 @@ def swap(xs: list[int], i: int, j: int) -> None:
 
 nums: list[int] = [2,3,1,4]
 isort(nums)
-print("hello")
+print("hello motherfuckers")
 print(nums)
