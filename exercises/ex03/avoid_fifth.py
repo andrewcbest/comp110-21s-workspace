@@ -12,6 +12,7 @@ def main() -> None:
 
 
 def avoid_fifth(input: str) -> str: 
+    """Removes e's and E's"""
     i: int = 0
     new_str: str = ""
     while i < len(input):

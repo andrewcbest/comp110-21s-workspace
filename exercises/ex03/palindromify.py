@@ -12,17 +12,16 @@ def main() -> None:
 
 def palindromify(input: str, type: bool) -> str: 
     """Creates a palindrome."""
-    if type == True: 
-        i: int = 1
-        new_string: str = input
-        while i < len(input) + 1 :
+    i: int = 1
+    new_string: str = input
+    if type is True: 
+        while i < len(input) + 1  :
             new_string += input[-i]
             i += 1 
         return(new_string)
     else: 
-        i: int = 2
-        new_string: str = input
-        while i < len(input) + 1 :
+        i = 2
+        while i < len(input) + 1  :
             new_string += input[-i]
             i += 1 
         return(new_string)
