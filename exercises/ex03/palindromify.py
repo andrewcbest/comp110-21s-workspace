@@ -15,13 +15,13 @@ def palindromify(input: str, type: bool) -> str:
     i: int = 1
     new_string: str = input
     if type is True: 
-        while i < len(input) + 1  :
+        while i < len(input) + 1:
             new_string += input[-i]
             i += 1 
         return(new_string)
     else: 
         i = 2
-        while i < len(input) + 1  :
+        while i < len(input) + 1:
             new_string += input[-i]
             i += 1 
         return(new_string)
