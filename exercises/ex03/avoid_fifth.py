@@ -11,20 +11,14 @@ def main() -> None:
     # ex. print(avoid_fifth("hello there"))
 
 
-def avoid_fifth(text_input: str) -> str:
-    """Will remove any E's!"""
-    i = 0
-    text_list: list[str] = []
-    while i < len(text_input):
-        ordinal: int = ord(text_input[i])
-        if ordinal != 69 and ordinal != 101:
-            text_list.append(chr(ordinal))
+def avoid_fifth(str):
+    i: int = 0
+    new_str: str = ""
+    while i < len(str):
+        if str[i] != "e" and str[i] != "E":
+            new_str += str[i]
         i += 1
-    new_text: str
-    new_text = ""
-    for i in text_list:
-        new_text += i 
-    return(new_text)
+    return(new_str)
 
 
 if __name__ == "__main__":
