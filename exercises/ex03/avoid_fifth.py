@@ -11,12 +11,12 @@ def main() -> None:
     # ex. print(avoid_fifth("hello there"))
 
 
-def avoid_fifth(str):
+def avoid_fifth(input: str) -> str: 
     i: int = 0
     new_str: str = ""
-    while i < len(str):
-        if str[i] != "e" and str[i] != "E":
-            new_str += str[i]
+    while i < len(input):
+        if input[i] != "e" and input[i] != "E":
+            new_str += input[i]
         i += 1
     return(new_str)
 
